@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <script>(function(d){var r=d.documentElement;r.className=r.className.replace('no-js','js');if(matchMedia('(prefers-reduced-motion:reduce)').matches)r.classList.add('reduce-motion');})(document);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Trattoria da Abele — La Milano dei risotti · NoLo · dal 1979</title>
 <meta name="description" content="Trattoria Temperanza da Abele, Via Temperanza 5 (NoLo, Milano): dal 1979 la trattoria dei risotti — oltre 600 ricette, risotto giallo alla milanese, ossobuco e cucina lombarda. Solo a cena.">
 <link rel="canonical" href="https://rotenzark.github.io/trattoria-da-abele/">
@@ -21,9 +22,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script type="application/ld+json">
 {
@@ -239,7 +238,7 @@
         </div>
       </div>
       <div class="map reveal">
-        <iframe title="Mappa Trattoria da Abele, Via Temperanza 5 Milano" src="https://www.google.com/maps?q=Via+Temperanza+5,+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa Trattoria da Abele, Via Temperanza 5 Milano" src="https://www.google.com/maps?q=Via+Temperanza+5,+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps?q=Via+Temperanza+5,+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
       </div>
     </div>
   </div>
@@ -323,6 +322,7 @@
     <p>© <span id="year"></span> Trattoria Temperanza da Abele · Milano</p>
     <p class="footer__credit" data-i18n="footer.credit">Sito dimostrativo — Bespoke Studio</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <div class="action-bar">
@@ -337,5 +337,6 @@
 </div>
 
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
